@@ -1,4 +1,4 @@
-# From Film to Playlist
+# Evaluation of LLM with KG on Macedonian Media
 
 Can a knowledge graph help an LLM answer questions in Macedonian about film music? I tested this with 18 questions and a catalogue of 32 facts drawn from film credits and discographies. For example, to name an album by the composer of the music for „Врба“, the graph follows two links from the film to Кирил Џајковски and then to *Homebound*.
 
