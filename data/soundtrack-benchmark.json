@@ -1,0 +1,491 @@
+{
+  "description": "Macedonian film music question answering. Each answer option is supported by the listed fact IDs. An empty answer_options list means the answer is unavailable in this catalogue. The five development facts are retained in the catalogue as background. The 18 evaluation questions are separate from the development prompts.",
+  "facts": [
+    {
+      "id": "before-rain-music",
+      "subject": "Пред дождот",
+      "relation": "music_by",
+      "target": "Анастасија",
+      "source_url": "https://manchevski.com/films/before-the-rain/"
+    },
+    {
+      "id": "anastasia-nocturnal",
+      "subject": "Анастасија",
+      "relation": "released",
+      "target": "Nocturnal",
+      "source_url": "https://musicbrainz.org/artist/1682bbd8-41ec-45cf-8232-3ed5e94d8aa2"
+    },
+    {
+      "id": "dust-music",
+      "subject": "Прашина",
+      "relation": "music_by",
+      "target": "Кирил Џајковски",
+      "source_url": "https://manchevski.com/films/dust/"
+    },
+    {
+      "id": "kiril-homebound",
+      "subject": "Кирил Џајковски",
+      "relation": "released",
+      "target": "Homebound",
+      "source_url": "https://musicbrainz.org/artist/87d4efc5-c4a8-422b-9f8c-ea94c2eb4d0f"
+    },
+    {
+      "id": "shadows-main-music",
+      "subject": "Сенки",
+      "relation": "music_by",
+      "target": "Рајан Шор",
+      "source_url": "https://manchevski.com/films/shadows/"
+    },
+    {
+      "id": "sisterhood-music",
+      "subject": "Сестри",
+      "relation": "music_by",
+      "target": "Игор Василев – Новоградска",
+      "source_url": "https://www.kviff.com/en/programme/film/57/34198-sisterhood"
+    },
+    {
+      "id": "secret-ingredient-nikolov",
+      "subject": "Исцелител",
+      "relation": "music_by",
+      "target": "Бранислав Николов",
+      "source_url": "https://fragmentfilm.com/krani/"
+    },
+    {
+      "id": "secret-ingredient-trajkovski",
+      "subject": "Исцелител",
+      "relation": "music_by",
+      "target": "Пеце Трајковски",
+      "source_url": "https://fragmentfilm.com/krani/"
+    },
+    {
+      "id": "secret-ingredient-jovanoski",
+      "subject": "Исцелител",
+      "relation": "music_by",
+      "target": "Гоце Јованоски",
+      "source_url": "https://fragmentfilm.com/krani/"
+    },
+    {
+      "id": "third-half-music",
+      "subject": "Трето полувреме",
+      "relation": "music_by",
+      "target": "Кирил Џајковски",
+      "source_url": "https://kinoteka.mk/wp-content/uploads/2019/02/Kinopis-45-46-za-WEB-LR.pdf"
+    },
+    {
+      "id": "great-water-music",
+      "subject": "Големата вода",
+      "relation": "music_by",
+      "target": "Кирил Џајковски",
+      "source_url": "https://www.womex.com/virtual/password_production/djaikovski/the_great_water"
+    },
+    {
+      "id": "stela-music",
+      "subject": "Стела",
+      "relation": "music_by",
+      "target": "Оливер Јосифовски",
+      "source_url": "https://filmfund.gov.mk/wp-content/uploads/2021/06/NMFA-Film-Catalogue-2021.pdf"
+    },
+    {
+      "id": "honeyland-music",
+      "subject": "Медена земја",
+      "relation": "music_by",
+      "target": "Фолтин",
+      "source_url": "https://www.psfilmfest.org/2020-ps-film-festival/film-finder/honeyland"
+    },
+    {
+      "id": "willow-music",
+      "subject": "Врба",
+      "relation": "music_by",
+      "target": "Кирил Џајковски",
+      "source_url": "https://manchevski.com/films/willow/"
+    },
+    {
+      "id": "foltin-lolita",
+      "subject": "Фолтин",
+      "relation": "released",
+      "target": "LO-LEE-TA-TOO",
+      "source_url": "https://foltin.bandcamp.com/album/lo-lee-ta-too"
+    },
+    {
+      "id": "to-the-hilt-music",
+      "subject": "До Балчак",
+      "relation": "music_by",
+      "target": "Дуке Бојаџиев",
+      "source_url": "https://www.febiofest.cz/en/films/to-the-hilt-593f"
+    },
+    {
+      "id": "duke-love-is-the-way",
+      "subject": "Дуке Бојаџиев",
+      "relation": "released",
+      "target": "Love Is The Way",
+      "source_url": "https://sjfrecords.bandcamp.com/album/love-is-the-way"
+    },
+    {
+      "id": "bikini-moon-music",
+      "subject": "Bikini Moon",
+      "relation": "music_by",
+      "target": "Игор Василев – Новоградска",
+      "source_url": "https://manchevski.com/films/bikini-moon/"
+    },
+    {
+      "id": "igor-sisterhood-soundtrack",
+      "subject": "Игор Василев – Новоградска",
+      "relation": "released",
+      "target": "Sisterhood (Original Motion Picture Soundtrack)",
+      "source_url": "https://novogradska.bandcamp.com/album/sisterhood-original-motion-picture-soundtrack"
+    },
+    {
+      "id": "mothers-music",
+      "subject": "Мајки",
+      "relation": "music_by",
+      "target": "Игор Василев – Новоградска",
+      "source_url": "https://novogradska.bandcamp.com/album/mothers-official-soundtrack-full-album"
+    },
+    {
+      "id": "igor-bikini-moon-soundtrack",
+      "subject": "Игор Василев – Новоградска",
+      "relation": "released",
+      "target": "Bikini Moon (Original Motion Picture Soundtrack)",
+      "source_url": "https://novogradska.bandcamp.com/album/bikini-moon-original-motion-picture-soundtrack"
+    },
+    {
+      "id": "kaymak-main-music",
+      "subject": "Кајмак",
+      "relation": "music_by",
+      "target": "Danish String Quartet",
+      "source_url": "https://2023.bifest.it/wp-content/uploads/2023/01/Kaymak_PressKit.pdf"
+    },
+    {
+      "id": "danish-quartet-wood-works",
+      "subject": "Danish String Quartet",
+      "relation": "released",
+      "target": "Wood Works",
+      "source_url": "https://www.dacapo-records.dk/en/recordings/wood-works"
+    },
+    {
+      "id": "petrunya-music",
+      "subject": "Господ постои, името ѝ е Петрунија",
+      "relation": "music_by",
+      "target": "Оливие Самујан",
+      "source_url": "https://inter.pyramidefilms.com/pyramide-international-catalogue-g/god-exists-her-name-is-petrunija.html"
+    },
+    {
+      "id": "when-day-music",
+      "subject": "Кога денот немаше име",
+      "relation": "music_by",
+      "target": "Жан-Пол Деси",
+      "source_url": "https://www.febiofest.cz/en/films/when-the-day-had-no-name-170f"
+    },
+    {
+      "id": "housekeeping-alen",
+      "subject": "Домаќинство за почетници",
+      "relation": "music_by",
+      "target": "Ален Синкауз",
+      "source_url": "https://www.labiennale.org/en/cinema/2023/orizzonti/domakinstvo-za-pocetnici-housekeeping-beginners"
+    },
+    {
+      "id": "housekeeping-nenad",
+      "subject": "Домаќинство за почетници",
+      "relation": "music_by",
+      "target": "Ненад Синкауз",
+      "source_url": "https://www.labiennale.org/en/cinema/2023/orizzonti/domakinstvo-za-pocetnici-housekeeping-beginners"
+    },
+    {
+      "id": "m-music",
+      "subject": "М",
+      "relation": "music_by",
+      "target": "Натанаел Бергезе",
+      "source_url": "https://focuspocus.mk/m-main-cast-and-crew/"
+    },
+    {
+      "id": "snow-white-pejovski",
+      "subject": "Снежана на крајот умира",
+      "relation": "music_by",
+      "target": "Александар Пејовски",
+      "source_url": "https://palicfilmfestival.com/uploads/documents/20230713/document_691918118.pdf"
+    },
+    {
+      "id": "snow-white-makris",
+      "subject": "Снежана на крајот умира",
+      "relation": "music_by",
+      "target": "Ставрос Макрис",
+      "source_url": "https://palicfilmfestival.com/uploads/documents/20230713/document_691918118.pdf"
+    },
+    {
+      "id": "vera-ceku",
+      "subject": "Vera andrron detin",
+      "relation": "music_by",
+      "target": "Petrit Çeku",
+      "source_url": "https://www.labiennale.org/en/cinema/2021/lineup/orizzonti/vera-andrron-detin-vera-dreams-sea"
+    },
+    {
+      "id": "vera-salihu",
+      "subject": "Vera andrron detin",
+      "relation": "music_by",
+      "target": "Genc Salihu",
+      "source_url": "https://www.labiennale.org/en/cinema/2021/lineup/orizzonti/vera-andrron-detin-vera-dreams-sea"
+    }
+  ],
+  "cases": [
+    {
+      "id": "soundtrack-01",
+      "film": "Сестри",
+      "question": "Кој ја компонирал музиката за филмот „Сестри“?",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Игор Василев – Новоградска",
+          "fact_ids": [
+            "sisterhood-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-02",
+      "film": "Исцелител",
+      "question": "Наведи еден од авторите на музиката во филмот „Исцелител“.",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Бранислав Николов",
+          "fact_ids": [
+            "secret-ingredient-nikolov"
+          ]
+        },
+        {
+          "answer": "Пеце Трајковски",
+          "fact_ids": [
+            "secret-ingredient-trajkovski"
+          ]
+        },
+        {
+          "answer": "Гоце Јованоски",
+          "fact_ids": [
+            "secret-ingredient-jovanoski"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-03",
+      "film": "Трето полувреме",
+      "question": "Кој е автор на музиката за „Трето полувреме“?",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Кирил Џајковски",
+          "fact_ids": [
+            "third-half-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-04",
+      "film": "Големата вода",
+      "question": "Кој ја напишал музиката за филмот „Големата вода“?",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Кирил Џајковски",
+          "fact_ids": [
+            "great-water-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-05",
+      "film": "Стела",
+      "question": "Кој е наведен како композитор на музиката за „Стела“?",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Оливер Јосифовски",
+          "fact_ids": [
+            "stela-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-06",
+      "film": "Медена земја",
+      "question": "Кој состав е наведен за музиката во документарецот „Медена земја“?",
+      "kind": "one-hop",
+      "needs_album": false,
+      "answer_options": [
+        {
+          "answer": "Фолтин",
+          "fact_ids": [
+            "honeyland-music"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-07",
+      "film": "Врба",
+      "question": "Наведи еден албум на композиторот на музиката за „Врба“.",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "Homebound",
+          "fact_ids": [
+            "willow-music",
+            "kiril-homebound"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-08",
+      "film": "Медена земја",
+      "question": "Кој албум можам да го слушнам од составот што ја направил музиката за „Медена земја“?",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "LO-LEE-TA-TOO",
+          "fact_ids": [
+            "honeyland-music",
+            "foltin-lolita"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-09",
+      "film": "До Балчак",
+      "question": "Наведи еден албум од авторот на музиката за филмот „До Балчак“.",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "Love Is The Way",
+          "fact_ids": [
+            "to-the-hilt-music",
+            "duke-love-is-the-way"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-10",
+      "film": "Bikini Moon",
+      "question": "Наведи еден албум на композиторот на музиката за „Bikini Moon“.",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "Sisterhood (Original Motion Picture Soundtrack)",
+          "fact_ids": [
+            "bikini-moon-music",
+            "igor-sisterhood-soundtrack"
+          ]
+        },
+        {
+          "answer": "Bikini Moon (Original Motion Picture Soundtrack)",
+          "fact_ids": [
+            "bikini-moon-music",
+            "igor-bikini-moon-soundtrack"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-11",
+      "film": "Мајки",
+      "question": "Кој албум го издал композиторот на музиката за „Мајки“? Наведи еден пример.",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "Sisterhood (Original Motion Picture Soundtrack)",
+          "fact_ids": [
+            "mothers-music",
+            "igor-sisterhood-soundtrack"
+          ]
+        },
+        {
+          "answer": "Bikini Moon (Original Motion Picture Soundtrack)",
+          "fact_ids": [
+            "mothers-music",
+            "igor-bikini-moon-soundtrack"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-12",
+      "film": "Кајмак",
+      "question": "Наведи еден албум од составот наведен како главен композитор за „Кајмак“.",
+      "kind": "two-hop",
+      "needs_album": true,
+      "answer_options": [
+        {
+          "answer": "Wood Works",
+          "fact_ids": [
+            "kaymak-main-music",
+            "danish-quartet-wood-works"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soundtrack-13",
+      "film": "Господ постои, името ѝ е Петрунија",
+      "question": "Наведи еден албум на композиторот на музиката за „Господ постои, името ѝ е Петрунија“.",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    },
+    {
+      "id": "soundtrack-14",
+      "film": "Кога денот немаше име",
+      "question": "Кој е еден албум на авторот на музиката за филмот „Кога денот немаше име“?",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    },
+    {
+      "id": "soundtrack-15",
+      "film": "Домаќинство за почетници",
+      "question": "Наведи еден албум од кој било од композиторите на музиката за „Домаќинство за почетници“.",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    },
+    {
+      "id": "soundtrack-16",
+      "film": "М",
+      "question": "Наведи еден албум на композиторот на музиката за филмот „М“.",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    },
+    {
+      "id": "soundtrack-17",
+      "film": "Снежана на крајот умира",
+      "question": "Наведи еден албум на еден од авторите на музиката за „Снежана на крајот умира“.",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    },
+    {
+      "id": "soundtrack-18",
+      "film": "Vera andrron detin",
+      "question": "Наведи еден албум од кој било од музичарите наведени за филмот „Vera andrron detin“.",
+      "kind": "missing",
+      "needs_album": true,
+      "answer_options": []
+    }
+  ]
+}
